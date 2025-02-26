@@ -23,6 +23,10 @@ This application contains the following knowledge:
 - Animation
   
 ## The application look like this:
+
+![Simulator Screenshot - iPhone 16 - 2025-02-26 at 13 18 38](https://github.com/user-attachments/assets/4384128a-84a7-4ac8-9a5f-e7fb4fb71085)
+
+
 ![Simulator Screenshot - iPhone 16 - 2025-02-26 at 12 05 38](https://github.com/user-attachments/assets/89dfefef-ea95-4a1e-8d55-0ae6f2ccea89)
 
 
