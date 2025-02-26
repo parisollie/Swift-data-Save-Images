@@ -9,17 +9,20 @@ import SwiftUI
 import SwiftData
 import PhotosUI
 
-//Vid 449
+//V-449,Paso 1.12
 struct AddImageView: View {
     
     @Environment(\.modelContext) private var context
     @State private var selectedPhoto: PhotosPickerItem?
     @State private var photoData : Data?
     @State private var name = ""
+    //Para regresar
     @Environment(\.dismiss) var dismiss
     
     var body: some View {
+        //Paso 1.13
         VStack{
+            //Paso 1.15
             if let photoData, let uiImage = UIImage(data: photoData){
                 Image(uiImage: uiImage)
                     .resizable()
@@ -30,7 +33,7 @@ struct AddImageView: View {
             PhotosPicker(selection: $selectedPhoto, matching: .images, photoLibrary: .shared() ){
                 Label("Seleccionar imagen", systemImage: "photo")
             }
-            
+            //Paso 1.16
             if photoData != nil {
                 TextField("Nombre", text: $name)
                     .textFieldStyle(.roundedBorder)
@@ -46,7 +49,7 @@ struct AddImageView: View {
                 }
                 Spacer()
                 
-                //Para eliminar la imagén.
+                //Paso 1.17,Para eliminar la imagén.
                 Button {
                     withAnimation{
                         selectedPhoto = nil
@@ -62,8 +65,10 @@ struct AddImageView: View {
             }
             
         }
+        //Paso 1.14
         .navigationTitle("Agregar Imagen")
         .padding(.all)
+        //Para trabajar con la imagen.
         .task(id: selectedPhoto) {
             //aqui tomamos la imagen de la galeria
             if let data = try? await selectedPhoto?.loadTransferable(type: Data.self){
@@ -73,3 +78,6 @@ struct AddImageView: View {
     }
 }
 
+#Preview{
+    AddImageView()
+}

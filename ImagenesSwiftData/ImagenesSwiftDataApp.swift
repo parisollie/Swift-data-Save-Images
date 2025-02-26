@@ -12,7 +12,7 @@ struct ImagenesSwiftDataApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-            //Vid 447
+            //V-447, Paso 1.1
                 .modelContainer(for: PhotoModel.self)
         }
     }
