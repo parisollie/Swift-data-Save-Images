@@ -8,11 +8,12 @@
 import Foundation
 import SwiftData
 
-//V-447,Paso 1.0,creamos el modelo
+//V-447,Paso 1.0,creamos el modelo.
 @Model
 class PhotoModel {
-    //Para usar una imagen usamos el @attribute
+    // Para usar una imágen usamos el @attribute
     @Attribute(.externalStorage) var image : Data?
+    
     var name : String
     
     //Le ponemos initi
