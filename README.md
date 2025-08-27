@@ -1,4 +1,4 @@
-# Images App
+# Images App JM #49
 
 A new iOS project.
 
@@ -8,15 +8,9 @@ This project is a starting point for a iOS application.
 
 This application contains the following knowledge:
 
-- H-Stack
-  
-- V-Stack
-  
-- Images
-  
-- Design
-  
-- Modifiers
+- Swift Data
+
+- Save images
 
 - iOS 17
 
