@@ -3,7 +3,7 @@
 //  ImagenesSwiftData
 //
 //  Created by Paul F on 07/10/24.
-//  Actualizando.
+//  
 
 import SwiftUI
 import SwiftData
